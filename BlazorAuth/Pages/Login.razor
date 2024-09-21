@@ -1,0 +1,17 @@
+﻿@page "/login"
+@inherits BlazorAuth.PageSourceCode.LoginSourceCode
+
+<h3>Login</h3>
+<form>
+
+<div>
+    <label>
+        Token:
+        <InputText @bind-Value="LoginModel.Token"></InputText>
+    </label>
+
+   
+        <button @onclick="LoginClicked" type="submit">Login</button>
+</div>
+
+</form>
